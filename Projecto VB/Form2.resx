@@ -126,20 +126,11 @@
   <metadata name="Calories.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Ingredient.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Quantity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Calories.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lstrecipes.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAf0AAAGuCAYAAACa1t/RAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAArutJREFUeF7t3em+20TW9/3nEG6aboYkQCATBEgIMw00dEOP1/kfz37qW9orqYiy
+        vQAADr0BR/uQrQAArutJREFUeF7t3em+20TW9/3nEG6aboYkQCATBEgIMw00dEOP1/kfz37qW9orqYiy
         Ldnelry9Xvw+tjWUSqVS/ddaNfj/e/D2/7s6lEfvvHH15M6f9ubRu2900z0lvXzNoZfmqXj8bj9PU3n4
         Tj/dU3Fw/Snn99I9Fcqvl6+peH69dE/Fub+/Dwu9fE1l6fLH406+5qAMeumeAs+/l6epLP/+Hpb/NdSf
         Xr42sQrRX7rQDm000Ev3VPTyMweVvpfuqTi40VhadA6s/+ileyqy/M+r0e6x5Dt8qNNx7vUnRX8PHi/8
@@ -891,7 +882,7 @@
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAf0AAAGuCAYAAACa1t/RAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAArutJREFUeF7t3em+20TW9/3nEG6aboYkQCATBEgIMw00dEOP1/kfz37qW9orqYiy
+        wAAADsABataJCQAArutJREFUeF7t3em+20TW9/3nEG6aboYkQCATBEgIMw00dEOP1/kfz37qW9orqYiy
         Ldnelry9Xvw+tjWUSqVS/ddaNfj/e/D2/7s6lEfvvHH15M6f9ubRu2900z0lvXzNoZfmqXj8bj9PU3n4
         Tj/dU3Fw/Snn99I9Fcqvl6+peH69dE/Fub+/Dwu9fE1l6fLH406+5qAMeumeAs+/l6epLP/+Hpb/NdSf
         Xr42sQrRX7rQDm000Ev3VPTyMweVvpfuqTi40VhadA6s/+ileyqy/M+r0e6x5Dt8qNNx7vUnRX8PHi/8

@@ -39,6 +39,9 @@ Partial Class Form2
         label5 = New Label()
         btnback = New FontAwesome.Sharp.IconButton()
         btnaddrecipe = New FontAwesome.Sharp.IconButton()
+        label2 = New Label()
+        txtnumberingredients = New TextBox()
+        btnaddningredients = New Button()
         CType(dgvingredients, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -121,9 +124,9 @@ Partial Class Form2
         ' 
         lstrecipes.BackColor = Color.SaddleBrown
         lstrecipes.BackgroundImage = CType(resources.GetObject("lstrecipes.BackgroundImage"), Image)
-        lstrecipes.Location = New Point(12, 169)
+        lstrecipes.Location = New Point(12, 218)
         lstrecipes.Name = "lstrecipes"
-        lstrecipes.Size = New Size(183, 237)
+        lstrecipes.Size = New Size(260, 188)
         lstrecipes.TabIndex = 38
         lstrecipes.UseCompatibleStateImageBehavior = False
         lstrecipes.View = View.List
@@ -210,12 +213,48 @@ Partial Class Form2
         btnaddrecipe.TabIndex = 45
         btnaddrecipe.UseVisualStyleBackColor = False
         ' 
+        ' label2
+        ' 
+        label2.AutoSize = True
+        label2.BackColor = Color.Transparent
+        label2.Font = New Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        label2.ForeColor = Color.Peru
+        label2.Location = New Point(12, 159)
+        label2.Name = "label2"
+        label2.Size = New Size(174, 20)
+        label2.TabIndex = 47
+        label2.Text = "Number of ingredients:"
+        ' 
+        ' txtnumberingredients
+        ' 
+        txtnumberingredients.BackColor = Color.PeachPuff
+        txtnumberingredients.Location = New Point(12, 182)
+        txtnumberingredients.Name = "txtnumberingredients"
+        txtnumberingredients.Size = New Size(238, 23)
+        txtnumberingredients.TabIndex = 48
+        ' 
+        ' btnaddningredients
+        ' 
+        btnaddningredients.BackColor = Color.SaddleBrown
+        btnaddningredients.FlatStyle = FlatStyle.Popup
+        btnaddningredients.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        btnaddningredients.ForeColor = Color.PeachPuff
+        btnaddningredients.Location = New Point(256, 171)
+        btnaddningredients.Name = "btnaddningredients"
+        btnaddningredients.Size = New Size(53, 34)
+        btnaddningredients.TabIndex = 49
+        btnaddningredients.Text = "ADD"
+        btnaddningredients.UseVisualStyleBackColor = False
+        ' 
         ' Form2
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(909, 477)
+        Controls.Add(btnaddningredients)
+        Controls.Add(txtnumberingredients)
+        Controls.Add(label2)
         Controls.Add(btnaddrecipe)
         Controls.Add(btnback)
         Controls.Add(label5)
@@ -252,4 +291,7 @@ Partial Class Form2
     Private WithEvents label5 As Label
     Private WithEvents btnback As FontAwesome.Sharp.IconButton
     Private WithEvents btnaddrecipe As FontAwesome.Sharp.IconButton
+    Private WithEvents label2 As Label
+    Private WithEvents txtnumberingredients As TextBox
+    Private WithEvents btnaddningredients As Button
 End Class

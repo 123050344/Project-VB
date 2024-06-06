@@ -1,57 +1,39 @@
 ﻿Public Class Recipe
     Public Property Namer As String
-    Public Property Ingredients As List(Of Ingredient)
+    Public Property Ingredients As Ingredient()
     Public ReadOnly Property Calories As Integer
+        Get
+            Return CalcularCalories()
+        End Get
+    End Property
 
+    ' Constructor que no recibe parámetros
     Public Sub New()
-        Ingredients = New List(Of Ingredient)()
+        Ingredients = New Ingredient(0) {}
     End Sub
 
-    Public Sub New(namer As String, ingredients As List(Of Ingredient))
+    ' Constructor que recibe el número de ingredientes
+    Public Sub New(namer As String, numberOfIngredients As Integer)
+        Me.Namer = namer
+        Ingredients = New Ingredient(numberOfIngredients - 1) {}
+    End Sub
+
+    ' Constructor que recibe un arreglo de ingredientes
+    Public Sub New(namer As String, ingredients As Ingredient())
         Me.Namer = namer
         Me.Ingredients = ingredients
         CalcularCalories()
     End Sub
 
-    Public Sub New(ingredients As List(Of Ingredient))
-        Me.Ingredients = ingredients
-        CalcularCalories()
-    End Sub
 
-    Public Sub CalcularCalories()
+    ' Método que no recibe parámetros pero regresa algo
+    Public Function CalcularCalories() As Integer
         Dim totalCalories As Integer = 0
-        For Each ingredient In Ingredients
-            totalCalories += ingredient.Calories
+        For Each ingredient As Ingredient In Ingredients
+            If ingredient IsNot Nothing Then
+                totalCalories += ingredient.Calories
+            End If
         Next
-        SetCalories(totalCalories)
-    End Sub
-
-
-    Private Sub SetCalories(value As Integer)
-        Me.CaloriesField = value
-    End Sub
-
-
-    Private CaloriesField As Integer
-
-
-    Public Class Ingredient
-
-        Public Property Namei As String
-        Public Property Quantity As Integer
-
-        Public ReadOnly Property Calories As Integer
-
-        Public Sub New(namei As String, quantity As Integer, calories As Integer)
-            Me.Namei = namei
-            Me.Quantity = quantity
-            Me.Calories = calories
-        End Sub
-
-        Public Sub ShowInformation()
-            Console.WriteLine($"Ingredient: {Namei}, Quantity: {Quantity}, Calories: {Calories}")
-        End Sub
-    End Class
-
-
+        Return totalCalories
+    End Function
 End Class
